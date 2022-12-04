@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantau COVID-19</title>
+    <link rel="icon" href="{% static 'logo_web/covid.png' %}">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="root">
+        <div class="head">
+            <h1>Website ini merupakan website yang akan membantu anda dalam memantau virus corona.</h1>
+            <h6>Disclaimer: website ini merupakan bagian dari pembelajaran ML.</h6>
+        </div>
+        <div class="input">
+            <p>Masukkan tanggal yang ingin diprediksi (max date 1 Maret 2021):</p>
+            <form action="/" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <div>
+                    <input type="checkbox" id="check" name="check" value="PSBB">
+                    <label for="check">PSBB</label>
+                </div>
+                {% if not valid %}
+                    <h6>Tanggal yang dimasukkan tidak valid</h6>
+                {% endif %}
+                <div>
+                    <button type="submit" name="button-login" class="btn btn-primary">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
