@@ -1,0 +1,129 @@
+<!-- <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+{% extends 'base.html' %} {% block style %}
+<style>
+        h1 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        body {
+            margin-left: 40px;
+            margin-right: 50px;
+        }
+        
+        .container {
+            margin: 0;
+            display: inline-flex;
+        }
+        
+        .container2 {
+            align-items: center;
+        }
+
+        .img-circle{
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .statusfont{
+            font-size: 22;
+        }
+
+        .verticalhorizontal {
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            text-align: center;
+            width: 300px;
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+
+    </style>
+{% endblock %} {% block content %}
+
+<!-- </head> -->
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1 style="text-align:center; font-family: Alef; font-size: 50px;"><strong>
+  My Profile </strong></h1> <br>
+</div>
+
+<!-- Navigation Bar -->
+<!-- <center>
+<div class="navbar" style="text-align: center;">
+  <a href="#myprofile">Profile</a>
+</div>
+</center> -->
+<!-- The flexible grid (content) -->
+<div class="row">
+<div class="col" >
+    <div class="verticalhorizontal">
+        <img src="https://image.shutterstock.com/image-photo/modern-hospital-style-building-260nw-319869074.jpg" style="border-radius: 50%;">
+        </div>
+
+</div>
+    <br><br>
+    
+<div class="col" style="object-position: center; margin-left: 10%;">
+    <section id= "myprofile">
+    <center>
+
+        <div class="statusfont" style="text-align: left;">
+            Nomor identitas: {{ row_pengguna.nomor_id }} <br>
+            Nama lengkap: {{ row_pengguna.nama_lengkap }} <br>
+            Username: {{ row_pengguna.username }} <br>
+            Tanggal lahir: {{ row_pengguna.tanggal_lahir }} <br>
+            Email: {{ row_pengguna.email }} <br>
+            Alamat: {{ row_pengguna.alamat }} <br>
+            {% if request.session.role == "dokter" %}
+            ID Dokter: {{ row_role.id_dokter }} <br>
+            No SIP: {{ row_role.no_sip }} <br>
+            Spesialisasi: {{ row_role.spesialisasi }} <br>
+            {% endif %}
+            {% if request.session.role == "pasien" %}
+            Alergi: 
+            {% for pasien in row_role %}
+            {{ forloop.counter}}.{{ pasien.alergi }} 
+            {% endfor %}
+            {% endif %}
+        </div>
+
+
+    </center>
+    </section>
+    
+
+</div>
+
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags %}
+                <script>alert("{{ message }}")</script>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html> -->
+{% endblock %}

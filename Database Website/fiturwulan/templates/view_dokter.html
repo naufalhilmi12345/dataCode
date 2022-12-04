@@ -1,0 +1,59 @@
+{% extends 'base.html' %} 
+{% block style %}
+<style>
+    h1 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+</style>
+<title>Informasi Dokter RS Cabang</title>
+{% endblock %} 
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Informasi Dokter RS Cabang</h1>
+    </div>
+    <div>
+        <table class=' table table-condensed '>
+            <thead>
+                <tr>
+                    <th>Kode RS Cabang</th>
+                    <th>ID Dokter</th>
+                    {% if request.session.role == "administrator" %}
+                        <th>Action</th>
+                    {% endif %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in table %}
+                <tr>
+                    {% if request.session.role == "administrator" %}
+                    
+                    {% endif %}
+                        <td>{{i.kode_rs}}</td>
+                        <td>{{i.id_dokter}}</td>
+                        {% if request.session.role == "administrator" %}
+                        <td>
+                            <div class="pi-draggable btn-group" draggable="true">
+                            <form action="update_dokter" method="GET" class="form-group">       
+                                <input type="submit" class="btn btn-outline-dark" value="Update">
+                                <input type="hidden" name="kode_rs" value="{{i.kode_rs}}">
+                                <input type="hidden" name="id_dokter" value="{{i.id_dokter}}">  
+                            </form>
+                            <form action="delete_dokter" method="GET" class="form-group"> 
+                                <input type="submit" class="btn btn-outline-dark" value="Delete">
+                                <input type="hidden" name="kode_rs" value="{{i.kode_rs}}">  
+                                <input type="hidden" name="id_dokter" value="{{i.id_dokter}}">  
+                            </form>
+                            </div>
+                        </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
