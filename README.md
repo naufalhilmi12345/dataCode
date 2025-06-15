@@ -1,7 +1,7 @@
 # 📁 Data Code Repository
 
 Selamat datang di **Data Code Repository**!  
-Repository ini berisi code dan notebook yang terkait dengan **Data Analysis** dan **Data Science****.
+Repository ini berisi code dan notebook yang terkait dengan **Data Analysis** dan **Data Science**.
 
 ## 📚 Deskripsi
 
