@@ -1,28 +1,28 @@
-# 🛠 Data Scientist - Project Repository
+# 🛠 Data Science - Project Repository
 
-Selamat datang di folder **data_science**!  
-Bagian ini berisi code dan notebook yang terkait dengan tugas dan project yang dikerjakan sebagai **Data Scientist**.
+Welcome to the **Data Science** folder!  
+This section contains code and notebooks related to tasks and projects carried out as a **Data Science**.
 
-## 📚 Deskripsi
+## 📚 Description
 
-Folder **data_science** ini merupakan kumpulan script dan notebook yang diterapkan untuk menyelesaikan permasalahan data science, meliputi:
+The **Data Science** folder is a collection of scripts and notebooks used to solve data science problems, including:
 
-- **NLP (Natural Language Processing)** — Analisis Sentimen, Text Classification, Text Summarization, dan lainnya.
-- **Imbalanced Data** — Penanganan data tidak seimbang (imbalanced) menggunakan SMOTE, undersampling, dan oversampling.
-- **Graph Mining** — Analisis jaringan, community detection, dan link prediction.
-- **PySpark** — Pengolahan data skala besar, transformasi, dan pembuatan pipeline menggunakan Apache Spark (PySpark).
+- **PySpark** — Large-scale data processing, transformation, and pipeline implementation using Apache Spark (PySpark).
+- **Graph Mining** — Network analysis, community detection, and link prediction.
+- **Imbalanced Data** — Handling imbalanced data using SMOTE, undersampling, and oversampling.
+- **NLP (Natural Language Processing)** — Sentiment Analysis, Text Classification, Text Summarization, and more.
 
 ## 📁 File Structure
 
 ```
-data_science/
- ├── NLP Related Code/
- ├── Imbalance Data/
+Data Science/
+ ├── Apache Spark Project/
  ├── Graph Mining/
- └── Apache Spark Project/
+ ├── Imbalanced Data/
+ └── NLP Related Code/
 ```
 
-- **NLP Related Code/** — Implementasi dan eksperimen NLP
-- **Imbalance Data/** — Penanganan dan eksperimen pada dataset imbalanced
-- **Graph Mining/** — Analisis jaringan dan graph
-- **Apache Spark Project/** — Implementasi pipeline dan transformasi data besar menggunakan PySpark
+- **Apache Spark Project/** — Implementing data transformation and pipeline processing with PySpark
+- **Graph Mining/** — Network and graph analysis
+- **Imbalanced Data/** — Handling and experiments with imbalanced datasets
+- **NLP Related Code/** — Implementations and experiments related to NLP

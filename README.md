@@ -1,20 +1,20 @@
 # 📁 Data Code Repository
 
-Selamat datang di **Data Code Repository**!  
-Repository ini berisi code dan notebook yang terkait dengan **Data Analysis** dan **Data Science**.
+Welcome to the **Data Code Repository**!  
+This repository contains code and notebooks related to **Data Analysis** and **Data Science**.
 
-## 📚 Deskripsi
+## 📚 Description
 
-Repository ini merupakan kumpulan code, notebook, dan data yang digunakan untuk berbagai proyek **Data Analysis** dan **Data Science**.  
-Repository ini juga dapat berguna sebagai referensi atau portofolio mengenai pekerjaan yang terkait dengan data.
+This repository is a collection of code, notebooks, and data used for various **Data Analysis** and **Data Science** projects.  
+It can also serve as a reference or portfolio of work related to data.
 
-## 📁 Struktur File
+## 📁 File Structure
 
 ```
-Repository-Kode-Analisis-Data/
+Repository-Data-Analysis/
  ├── Data Analysis/
  └── Data Science/
 ```
 
-- **Data Analysis/** — Berisi code yang terkait dengan data science, machine learning, dan model statistik.
-- **Data Science/** — Berisi code yang terkait dengan pembersihan data, transformasi, visualisasi, dan analisis bisnis.
+- **Data Analysis/** — Contains code related to data cleaning, transformation, visualization, and business analysis.
+- **Data Science/** — Contains code related to data science, machine learning, and statistical models.
