@@ -3,7 +3,7 @@
 Welcome to **Data Code Repository**!  
 This repository contains code and notebooks related to **Data Analysis** and **Data Scientist** tasks.
 
-## 🥰 About
+## 📚 About
 
 This repository is a collection of code, notebook files, and data used for various **Data Science and Data Analysis** projects.  
 It’s designed to be a helpful starting point or a portfolio of my data-related work.

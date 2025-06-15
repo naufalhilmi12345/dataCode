@@ -3,7 +3,7 @@
 Selamat datang di folder **data_science**!  
 Bagian ini berisi code dan notebook yang terkait dengan tugas dan project yang dikerjakan sebagai **Data Scientist**.
 
-## 🥰 Deskripsi
+## 📚 Deskripsi
 
 Folder **data_science** ini merupakan kumpulan script dan notebook yang diterapkan untuk menyelesaikan permasalahan data science, meliputi:
 
