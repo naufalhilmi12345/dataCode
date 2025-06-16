@@ -1,4 +1,4 @@
-# 🛠 Data Scientist - Project Repository
+# 🛠 Data Analysis - Project Repository
 
 Welcome to the **Data Analysis** folder!  
 This section contains code and notebooks related to tasks and projects carried out as a **Data Analyst**.
