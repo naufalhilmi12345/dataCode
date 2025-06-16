@@ -31,6 +31,8 @@ Performing **table merges** (using IDs and relationships).
 
 ## 📁 Dashboard Content
 
+The dashboard can be accessed at [Brazilian E-Commerce Case Dashboard](https://lookerstudio.google.com/reporting/cb59c434-958d-4613-a67c-b0b1cd75a798/page/Hr91D)
+
 The **dashboard** is designed to enable stakeholders to uncover patterns and generate actionable insight.  
 It includes a range of charts, tables, and metrics, such as:
 
@@ -48,7 +50,3 @@ E-commerce-Brazil/
 
 - **data/** — Stores raw CSV files with all 9 tables.
 - **notebook/** — Stores code for data transformation and flat table preparation.
-
-## Dashboard Content
-
-The dashboard can be accessed at [Brazilian E-Commerce Case Dashboard](https://lookerstudio.google.com/reporting/cb59c434-958d-4613-a67c-b0b1cd75a798/page/Hr91D)
