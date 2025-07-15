@@ -9,7 +9,7 @@ The **Data Analysis** folder is a collection of scripts and notebooks used to so
 
 - **Brazilian E-Commerce Case** — Viewing information on a dashboard from multiple processed datasets.
 - **Heart Attack Case** — Viewing information through a dashboard based on a CSV table.
-- **NYC Yellow Taxi Trip** — Viewing information about NYC Yellow Taxi Trip performance.
+- **NYC Yellow Taxi Trip Case** — Viewing information about NYC Yellow Taxi Trip performance.
 
 ## 📁 File Structure
 
@@ -17,5 +17,5 @@ The **Data Analysis** folder is a collection of scripts and notebooks used to so
 Data Analysis/
  ├── Brazilian E-Commerce Case/
  ├── Heart Attack Case/
- └── NYC Yellow Taxi Trip/
+ └── NYC Yellow Taxi Trip Case/
 ```
